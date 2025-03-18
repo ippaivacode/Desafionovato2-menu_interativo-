@@ -1,80 +1,85 @@
-# Desafionovato2-menu_interativo-
-Desafio: nível novato
-Comparando Cartas do Super Trunfo
+# Super Trunfo de Cartas
+
+Este programa é um jogo baseado no conceito de Super Trunfo, onde duas cartas de cidades são comparadas com base em atributos como população, área, PIB per capita, entre outros.
+
+```
+
+## Como Jogar
+
+1. O programa solicitará que o usuário cadastre duas cartas, informando os seguintes dados para cada cidade:
+   - Letra do Estado (A-H)
+   - Código da Carta (até 3 caracteres)
+   - Nome da Cidade
+   - População (número inteiro)
+   - Área da Cidade (em km²)
+   - PIB da Cidade (em bilhões de reais)
+   - Número de pontos turísticos
+
+2. Após o cadastro das duas cartas, o programa exibirá os dados das cidades cadastradas.
+
+3. O usuário deverá escolher um dos atributos disponíveis para a comparação:
+   - **1**: População
+   - **2**: Área
+   - **3**: Pontos turísticos
+   - **4**: PIB per Capita
+   - **5**: Densidade populacional
+
+4. O programa comparará os valores do atributo escolhido e indicará qual cidade venceu na comparação.
+
+## Exemplo de Uso
+
+### Entrada do Usuário:
+```
+Digite a letra do estado (A-H):
+A
+Digite o Código da Carta (até 3 caracteres):
+A01
+Digite o Nome da Cidade:
+Cidade Alfa
+Digite a população da cidade (somente números inteiros):
+1000000
+Digite a área da cidade em km²:
+500.5
+Digite o PIB (em bilhões de reais):
+50.2
+Digite o número de pontos turísticos:
+10
+------------------------------------------------------
+Digite a letra do estado (A-H):
+B
+Digite o Código da Carta (até 3 caracteres):
+B02
+Digite o Nome da Cidade:
+Cidade Beta
+Digite a população da cidade (somente números inteiros):
+800000
+Digite a área da cidade em km²:
+600.2
+Digite o PIB (em bilhões de reais):
+45.8
+Digite o número de pontos turísticos:
+15
+------------------------------------------------------
+Escolha um atributo para comparar:
+1. População
+2. Área
+3. Pontos turísticos
+4. PIB per Capta
+5. Densidade populacional
+
+### Saída Esperada:
+Escolha: 5
+Você escolheu o atributo 'Densidade populacional' 
+Carta 1- Cidade alpha : 2
+Carta 2- Cidade Beta : 1
+Resultado: Carta 2 Cidade Beta venceu!
+```
 
 
-Você já cadastrou as cartas com suas informações no desafio anterior (incluindo estado, nome, população, área, PIB, e pontos turísticos, além da densidade populacional e PIB per capita calculados). Agora, você irá implementar a lógica do jogo!
 
+## Observações
+- O programa realiza cálculos adicionais como PIB per capita e densidade populacional automaticamente.
+- Caso o usuário insira uma opção inválida no menu de comparação, o programa informará o erro.
 
-O que você vai fazer
+Divirta-se jogando Super Trunfo de Cartas!
 
-
-Você implementará a lógica para comparar duas cartas e determinar a vencedora com base em um único atributo numérico (como população, área, PIB, etc.). Este desafio é uma continuação do desafio do tema anterior, onde você desenvolveu o cadastro das cartas e você poderá reaproveitar o código de cadastro de cartas que já foi desenvolvido. O foco deste nível é a comparação entre duas cartas já cadastradas, utilizando estruturas de decisão if e if-else.
-
-
-Requisitos funcionais
-
-
-Seu programa em C deverá:
- 
-
-Receber os dados de duas cartas: O programa deve receber os dados de duas cartas do Super Trunfo. Utilize o código desenvolvido no desafio anterior para o cadastro das cartas. As cartas devem conter os seguintes atributos:
- 
-Estado (string)
- 
-Código da carta (string)
- 
-Nome da cidade (string)
- 
-População (int)
- 
-Área (float)
- 
-PIB (float)
- 
-Número de pontos turísticos (int)
- 
-Calcular Densidade Populacional e PIB per capita: O programa deve calcular e exibir:
- 
-Densidade Populacional: População / Área
- 
-PIB per capita: PIB / População
- 
-Comparar um atributo escolhido: Você deverá escolher apenas um dos atributos numéricos (População, Área, PIB, Densidade Populacional ou PIB per capita) para realizar a comparação entre as duas cartas. Essa escolha deve ser feita diretamente no código, não pela entrada do usuário.
- 
-Determinar a carta vencedora:
- 
-Para todos os atributos, exceto Densidade Populacional, a carta com o maior valor vence.
- 
-Para Densidade Populacional, a carta com o menor valor vence.
- 
-Exibir o resultado da comparação: O programa deve exibir, de forma clara, qual carta venceu a comparação, incluindo o atributo utilizado na comparação e os valores das duas cartas para aquele atributo. Exemplo:
- 
-
-Comparação de cartas (Atributo: População):
- 
-
-Carta 1 - São Paulo (SP): 12.300.000
-
-Carta 2 - Rio de Janeiro (RJ): 6.000.000
-
-Resultado: Carta 1 (São Paulo) venceu!
-
-
-Requisitos não funcionais
-
-
-Usabilidade: A saída do programa deve ser clara e fácil de entender.
- 
-Legibilidade: O código deve ser bem organizado, com comentários explicando a lógica utilizada. Utilize nomes de variáveis descritivos.
- 
-Documentação: Comente seu código, explicando o propósito de cada parte.
-
-Simplificações para o nível básico
-
-
-Neste nível, você irá comparar apenas duas cartas pré-definidas no código.
- 
-A escolha do atributo para comparação será feita diretamente no código, não haverá interação com o usuário para escolher o atributo.
- 
-Não é necessário implementar menus interativos neste nível. Foque na lógica de comparação utilizando if e if-else.
